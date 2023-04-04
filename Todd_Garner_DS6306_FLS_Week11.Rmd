@@ -150,8 +150,8 @@ plot(austourists)
 aust = window(austourists,start = 1999, end = 2004)
 
 #fit an additive and multiplicative model
-fit1s = hw(aust,seasonal = "additive",h = 40)
-fit2s = hw(aust,seasonal = "multiplicative",h = 40)
+fit1s = hw(aust,seasonal = "multiplicative",h = 20)
+fit2s = hw(aust,seasonal = "multiplicative",h = 12)
 
 #Plot the original data
 plot(aust,ylab = "Australian Tourists", xlab = "Year", type = "o", xlim = c(1999, 2014),ylim = c(15,60))
